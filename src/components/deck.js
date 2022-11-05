@@ -7,8 +7,12 @@ class Deck {
         this.cards = cards
     }
 
-    AddCard() {
-        
+    AddCardTop(card) {
+        this.cards.push(card)
+    }
+
+    AddCardBottom(card) {
+        this.cards.unshift(card)
     }
 
     DrawRandom(){
