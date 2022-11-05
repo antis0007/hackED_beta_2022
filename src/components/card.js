@@ -3,5 +3,6 @@ class Card {
         this.suit = suit
         this.value = value
     }
+    // Add image
 }
 

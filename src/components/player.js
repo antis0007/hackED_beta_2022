@@ -9,12 +9,19 @@ class Player {
         this.hand.AddCard(deck.DrawTop())
     }
 
-    PlayCard() {
-        // 
+    PlayCard(index) {
+        this.hand.DrawIndex(index)
+        // TODO put card into play
     }
 
-    Discard() {
+    DiscardBottom(card, pile) {
         // Adds Card to Discard Pile
+        pile.AddCardTop(card)
+    }
+
+    DiscardTop(card, pile) {
+        // Adds Card to Discard Pile
+        pile.AddCardBottom(card)
     }
     
 }
