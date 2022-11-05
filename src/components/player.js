@@ -1,7 +1,11 @@
-class Player {
+import {Board} from 'board.js'
+
+export class Player {
     hand = []
-    constructor(deck) {
+    constructor(deck, score, boardSlots) {
         this.hand = deck
+        this.score = score
+        this.board = Board(boardSlots)
     }
 
     DrawCard(deck) {
@@ -10,8 +14,9 @@ class Player {
     }
 
     PlayCard(index) {
-        this.hand.DrawIndex(index)
-        // TODO put card into play
+        // Retrieves a card from hand
+        card = this.hand.DrawIndex(index)
+        this.board.PlaceCard(card)
     }
 
     DiscardBottom(card, pile) {
