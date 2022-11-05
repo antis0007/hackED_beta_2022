@@ -1,0 +1,21 @@
+{
+    "name": "Test Cardgame",
+    "components":[
+       {
+        "text":{
+            "text": "TEST TEXT",
+            "pos": [10,10],
+            "size": 30
+        }
+        
+       },
+       {
+        "card":{
+            "points": 10,
+            "pos": [40,10]
+        }
+       }
+    ]
+
+ 
+}
