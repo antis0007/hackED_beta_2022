@@ -7,6 +7,10 @@ class Deck {
         this.cards = cards
     }
 
+    AddCard() {
+        
+    }
+
     DrawRandom(){
         let index = Math.floor(Math.random()*this.cards.length)
         return this.DrawIndex(index)

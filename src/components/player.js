@@ -6,8 +6,7 @@ class Player {
 
     DrawCard(deck) {
         //Draws a card from the specified deck
-        deck.DrawCard()
-        this.hand.AddCard(hand)
+        this.hand.AddCard(deck.DrawTop())
     }
 
     PlayCard() {
